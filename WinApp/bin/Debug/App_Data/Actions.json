@@ -1,0 +1,70 @@
+﻿{
+  "#": {
+    "home": "Trang chủ",
+    "migrate": "Load database",
+    "migrate/gen/model": "Models",
+    "migrate/gen/controller": "Controllers",
+    "migrate/gen/proc": "Stored Procedures",
+    "taikhoan": "Quản lý người dùng",
+    "taikhoan/lichsu": "Lịch sử đăng nhập",
+    "hanhchinh": "Quản lý hành chính",
+    "hanhchinh/huyen": "Đơn vị cấp huyện",
+    "hanhchinh/xa": "Đơn vị cấp xã",
+    "me/changepass": "Đổi mật khẩu",
+    "giong": "Giống",
+    "giong/index": "Thông tin giống cây",
+    "giong/cssx": "Cơ sở sản xuất",
+    "sanxuat": "Sản xuất",
+    "tainguyen": "Tài nguyên",
+    ".": ""
+  },
+  "actors": {
+    "Developer": {
+      "home": {
+        "Childs": [
+          {
+            "Text": "SQL",
+            "Refs": [ "migrate" ]
+          },
+          {
+            "Text": "C#",
+            "Refs": [] 
+          }
+        ]
+      },
+      "migrate/gen/model": {},
+      "migrate/gen/controller": {},
+      "migrate/gen/proc": {}
+    },
+    "Admin": {
+      "home": {
+        "Childs": [
+          {
+            "Text": "Người dùng",
+            "Refs": [ "taikhoan", "taikhoan/lichsu" ]
+          },
+          {
+            "Text": "Hành chính",
+            "Refs": [ "hanhchinh", "hanhchinh/huyen", "hanhchinh/xa" ]
+          },
+          {
+            "Text": "Profile",
+            "Refs": [ "me/changepass" ]
+          }
+        ]
+      },
+      "giong": {
+        "Childs": [
+          {
+            "Text": "Dữ liệu",
+            "Refs": ["giong/index", "giong/cssx"]
+          },
+          {
+            "Text": "Thống kê",
+            "Refs": [ "giong/index" ]
+          }
+        ]
+      }
+    }
+  }
+}
